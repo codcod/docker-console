@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Docker console</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto">
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+            }
+            tr:nth-child(even) {
+                background-color: #D6EEEE;
+            }
+            tr {
+                border-bottom: 1px solid #140101;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <code>docker ps -a --format '{{json .}}'</code>
+        <table id="table"></table>
+        <script src='script.js'></script>
+    </body>
+</html></body>
+</html>
